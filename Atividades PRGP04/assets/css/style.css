@@ -1,0 +1,12 @@
+.divatt4 {
+    width: 200px;
+    height: 200px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.divatt4:hover {
+    background-color: #00ff00;
+    cursor: pointer;
+}
