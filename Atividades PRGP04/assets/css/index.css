@@ -1,0 +1,60 @@
+header {
+    padding: 2.5rem 3rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 { font-weight: 800; font-size: 1.5rem; }
+
+.section-entities {
+    padding: 3rem;
+    background: linear-gradient(to bottom, var(--surface), var(--bg));
+}
+
+.entities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.entities-grid span {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+}
+
+.nav-links {
+    padding: 3rem;
+}
+
+.nav-links h2 {
+    margin-bottom: 1.5rem;
+}
+
+.links-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.links-container a {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--accent-dim);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.links-container a:hover {
+    background: var(--border);
+    color: white;
+}

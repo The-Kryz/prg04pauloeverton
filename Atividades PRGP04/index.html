@@ -4,52 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
-    <title>PRG04</title>
+    <title>PRG04 - Home</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
     <header>
         <h1>Símbolos Especiais e Formatação</h1>
-        <hr>
+        <a href="login.html" class="btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+            Login
+        </a>
     </header>
 
     <main>
-        <section>
-            <p>Abaixo estão os testes com as <strong>Entities</strong> do HTML, conforme solicitado na atividade:</p>
-            
-            <p>
-                Marca registrada: &reg; <br>
-                Copyright: &copy; <br>
-                Trade Mark: &trade; <br>
-                Euro: &euro; <br>
-                Libra: &pound; <br>
-                Yen: &yen; <br>
-                Centavo: &cent; <br>
-                Conjunto Vazio: &empty; <br>
-                Delta: &Delta; <br>
-                Testando o espaço em branco:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;viu?
-            </p>
+        <section class="section-entities">
+            <p>Testes com <strong>Entities</strong> do HTML:</p>
+            <div class="entities-grid">
+                <span>Marca registrada: &reg;</span>
+                <span>Copyright: &copy;</span>
+                <span>Trade Mark: &trade;</span>
+                <span>Euro: &euro;</span>
+                <span>Libra: &pound;</span>
+                <span>Yen: &yen;</span>
+                <span>Delta: &Delta;</span>
+                <span>Espaço:&nbsp;&nbsp;&nbsp;viu?</span>
+            </div>
         </section>
 
-        <nav>
-            <section>
-                <h2>Atividade 03</h2>
-                <a href="atividade-3.html" target="_blank" hreflang="pt">Clique aqui para abrir a atividade 03</a>
-            </section>
-
-            <section>
-                <h2>Atividade 04</h2>
-                <a href="atividade-4.html" target="_blank" hreflang="pt">Clique aqui para abrir a atividade 04</a>
-            </section>
-
-            <section>
-                <h2>Atividade 05</h2>
-                <a href="atividade-5.html" target="_blank" hreflang="pt">Clique aqui para abrir a atividade 05</a>
-            </section>
+        <nav class="nav-links">
+            <h2>Atividades Anteriores</h2>
+            <div class="links-container">
+                <a href="atividade-3.html" target="_blank">Atividade 03</a>
+                <a href="atividade-4.html" target="_blank">Atividade 04</a>
+                <a href="atividade-5.html" target="_blank">Atividade 05</a>
+            </div>
         </nav>
     </main>
-
-    <footer>
-        <p>&copy; 2026 PRG04 - Atividades</p>
-    </footer>
 </body>
 </html>

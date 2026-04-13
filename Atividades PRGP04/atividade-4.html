@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
-    <title>Atividade 4</title>
+    <title>Atividade 04 - PRG04</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/atividade-4.css">
 </head>
 <body>
-    <header>
-        <h2>Atividade 4 - incorporação de música, vídeo e CSS</h2>
+    <header class="atv-header">
+        <a href="index.html" class="btn-voltar">← Voltar para Home</a>
+        <h2>Atividade 4 - Incorporação de Música, Vídeo e CSS</h2>
     </header>
     
-    <main>
+    <main class="atv-container">
         <section>
             <audio controls autoplay loop>
                 <source src="assets/songs/KRUSH GIRL.mp3" type="audio/mp3">
@@ -22,15 +24,15 @@
 
         <br>
 
-        <section>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qtz34baapmc?si=vUK_EgjoHXj_7Uyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section class="media-section">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qtz34baapmc?si=vUK_EgjoHXj_7Uyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-player"></iframe>
             
-            <aside>
-                <h3>Sim, foi eu que criei essa música, e esse é meu canal no youtube, se inscreve aí Professor</h3>
+            <aside class="msg-prof">
+                <h3>Sim, foi eu que criei essa música, e esse é meu canal no youtube, se inscreve aí Professor!</h3>
             </aside>
         </section>
 
-        <section>
+        <section class="media-section">
             <div class="divatt4"></div>
         </section>
     </main>
