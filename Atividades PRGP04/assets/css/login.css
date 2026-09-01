@@ -1,47 +1,71 @@
-.login-screen {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-}
+/* =========================================
+   1. ESTILOS BASE (MOBILE FIRST - Smartphones)
+========================================= */
+
 
 .login-card {
     background: var(--surface);
     border: 1px solid var(--border);
-    padding: 2.5rem;
-    border-radius: 16px;
-    width: 100%;
-    max-width: 400px;
+    padding: 4rem; /* Aumento drástico no respiro interno para encorpar o card */
+    border-radius: 24px; 
+    width: 90%; /* Mantém a flexibilidade para telas menores */
+    max-width: 650px; /* Largura bruta para ter presença no monitor */
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5); /* Sombra mais pesada para destacar */
 }
 
-.login-card h2 { margin-bottom: 1.5rem; font-weight: 700; }
+.login-card h2 { 
+    margin-bottom: 2.5rem; 
+    font-weight: 800; 
+    font-size: 2.2rem; /* Título com mais autoridade */
+    text-align: center;
+}
 
-.form-group { margin-bottom: 1.2rem; }
+.form-group { margin-bottom: 1.5rem; }
 
 .form-group label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     color: var(--muted);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .form-group input {
     width: 100%;
-    padding: 12px;
+    padding: 18px; /* Inputs mais altos e robustos */
     background: var(--bg);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 12px;
     color: white;
-    font-family: inherit;
+    font-size: 1.1rem;
 }
 
 .form-group input:focus {
-    border-color: var(--accent-dim);
+    border-color: var(--accent);
     outline: none;
 }
 
 .error-msg {
     color: var(--error);
-    font-size: 0.8rem;
-    margin-top: 5px;
+    font-size: 0.85rem;
+    margin-top: 8px;
     display: none;
+}
+
+/* Botão de login ocupando a largura toda para dar peso visual */
+.login-card .btn-primary {
+    width: 100%;
+    justify-content: center;
+    padding: 16px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   2. MEDIA QUERY - TABLET/DESKTOP (min-width: 768px)
+========================================= */
+@media (min-width: 768px) {
+    .login-card {
+        padding: 3.5rem;
+        max-width: 480px; /* Aumentei de 400px para 480px para não ficar "pequena" */
+    }
 }
