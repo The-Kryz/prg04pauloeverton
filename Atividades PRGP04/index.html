@@ -4,42 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
-    <title>PRG04 - Home</title>
+    <title>Controle Financeiro - PRG04</title>
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-    <header>
-        <h1>Símbolos Especiais e Formatação</h1>
+    <header class="home-header">
+        <div class="home-brand">
+            <h1>Controle Financeiro</h1>
+            <p>Um lugar só para organizar receitas, despesas e o que sobra no fim do mês.</p>
+        </div>
         <a href="login.html" class="btn-primary">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-            Login
+            Entrar
         </a>
     </header>
 
+    <nav class="home-nav">
+        <a href="#visao-geral">Visão geral</a>
+        <a href="#recursos">Recursos</a>
+        <a href="login.html">Acessar sistema</a>
+    </nav>
+
     <main>
-        <section class="section-entities">
-            <p>Testes com <strong>Entities</strong> do HTML:</p>
-            <div class="entities-grid">
-                <span>Marca registrada: &reg;</span>
-                <span>Copyright: &copy;</span>
-                <span>Trade Mark: &trade;</span>
-                <span>Euro: &euro;</span>
-                <span>Libra: &pound;</span>
-                <span>Yen: &yen;</span>
-                <span>Delta: &Delta;</span>
-                <span>Espaço:&nbsp;&nbsp;&nbsp;viu?</span>
+        <section id="visao-geral" class="home-section">
+            <h2>O que você controla por aqui</h2>
+            <p>Cada real que entra e sai fica registrado num só lugar, sem planilha perdida nem conta de cabeça.</p>
+
+            <div class="cards-grid" id="recursos">
+                <article class="card">
+                    <h3>Receitas</h3>
+                    <p>Registre salário, freelas e qualquer outra entrada assim que o dinheiro cair na conta.</p>
+                </article>
+                <article class="card">
+                    <h3>Despesas</h3>
+                    <p>Separe gastos fixos de gastos do dia a dia e veja para onde o dinheiro está indo.</p>
+                </article>
+                <article class="card">
+                    <h3>Relatórios</h3>
+                    <p>Acompanhe o saldo do mês e compare com os meses anteriores em poucos cliques.</p>
+                </article>
             </div>
         </section>
 
-        <nav class="nav-links">
-            <h2>Atividades Anteriores</h2>
-            <div class="links-container">
-                <a href="atividade-3.html" target="_blank">Atividade 03</a>
-                <a href="atividade-4.html" target="_blank">Atividade 04</a>
-                <a href="atividade-5.html" target="_blank">Atividade 05</a>
-            </div>
-        </nav>
+        <aside class="home-tip">
+            <h3>Por que registrar tudo?</h3>
+            <p>Quem anota gastos pequenos costuma perceber, em poucas semanas, para onde o dinheiro realmente vai — e isso já muda decisões.</p>
+        </aside>
     </main>
+
+    <footer class="home-footer">
+        <p>Projeto acadêmico desenvolvido para a disciplina PRG04 — IFBA.</p>
+        <a href="index-old.html">Ver atividades anteriores</a>
+    </footer>
 </body>
 </html>
