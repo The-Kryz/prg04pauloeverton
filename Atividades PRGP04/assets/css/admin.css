@@ -6,17 +6,39 @@
 
 .admin-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3rem;
+    flex-direction: column; /* Empilhado no mobile */
+    align-items: stretch;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Evita que a tabela quebre o layout em telas pequenas */
 }
 
 .user-table {
     width: 100%;
+    min-width: 480px;
     border-collapse: collapse;
     background: var(--surface);
     border-radius: 12px;
     overflow: hidden;
+}
+
+@media (min-width: 600px) {
+    .admin-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    .admin-header #menu ul {
+        flex-direction: row;
+    }
 }
 
 .user-table th {

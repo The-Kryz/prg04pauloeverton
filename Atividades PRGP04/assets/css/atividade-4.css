@@ -3,7 +3,30 @@
 .btn-voltar { color: var(--accent-dim); text-decoration: none; font-weight: bold; }
 .atv-container { max-width: 800px; margin: 0 auto; padding: 2rem; display: flex; flex-direction: column; align-items: center; text-align: center; }
 .audio-player { width: 100%; max-width: 400px; margin-bottom: 1rem; }
-.video-player { max-width: 100%; border-radius: 8px; border: 1px solid var(--border); }
+
+/* Vídeo responsivo: o wrapper define a proporção (16:9) via padding-bottom,
+   e o iframe fica absoluto preenchendo 100% do wrapper. Assim a altura
+   acompanha a largura em qualquer tamanho de tela. */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    height: 0;
+    padding-bottom: 56.25%; /* 315 / 560 = proporção 16:9 */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
 .msg-prof { background: rgba(91, 140, 255, 0.1); padding: 1rem; border-left: 4px solid var(--accent-dim); margin-top: 1rem; border-radius: 4px; color: var(--text); }
 .divatt4 {
     width: 200px;

@@ -10,21 +10,37 @@
 </head>
 <body>
     <header class="home-header">
-        <div class="home-brand">
-            <h1>Controle Financeiro</h1>
-            <p>Um lugar só para organizar receitas, despesas e o que sobra no fim do mês.</p>
-        </div>
-        <a href="login.html" class="btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-            Entrar
-        </a>
-    </header>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-    <nav class="home-nav">
-        <a href="#visao-geral">Visão geral</a>
-        <a href="#recursos">Recursos</a>
-        <a href="login.html">Acessar sistema</a>
-    </nav>
+        <div class="home-header-top">
+            <div class="home-brand">
+                <h1>Controle Financeiro</h1>
+                <p>Um lugar só para organizar receitas, despesas e o que sobra no fim do mês.</p>
+            </div>
+
+            <label for="menu-toggle" class="menu-toggle-label" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="home-header-nav">
+            <nav id="menu">
+                <ul>
+                    <li><a href="#visao-geral">Visão geral</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="index-old.html">Atividades</a></li>
+                    <li><a href="login.html">Acessar sistema</a></li>
+                </ul>
+            </nav>
+
+            <a href="login.html" class="btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+                Entrar
+            </a>
+        </div>
+    </header>
 
     <main>
         <section id="visao-geral" class="home-section">
