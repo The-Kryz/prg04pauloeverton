@@ -1,18 +1,42 @@
-.atv-header { padding: 2rem; text-align: center; }
-.atv-header h2 { color: var(--accent); margin-top: 1rem; }
-.btn-voltar { color: var(--accent-dim); text-decoration: none; font-weight: bold; }
-.atv-container { max-width: 800px; margin: 0 auto; padding: 2rem; display: flex; flex-direction: column; align-items: center; text-align: center; }
-.audio-player { width: 100%; max-width: 400px; margin-bottom: 1rem; }
+.atv-header {
+    padding: 1rem;
+    text-align: center;
+}
 
-/* Vídeo responsivo: o wrapper define a proporção (16:9) via padding-bottom,
-   e o iframe fica absoluto preenchendo 100% do wrapper. Assim a altura
-   acompanha a largura em qualquer tamanho de tela. */
+.atv-header h2 {
+    color: var(--accent);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.btn-voltar {
+    color: var(--accent-dim);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.atv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.audio-player {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+}
+
 .video-wrapper {
     position: relative;
     width: 100%;
     max-width: 560px;
     height: 0;
-    padding-bottom: 56.25%; /* 315 / 560 = proporção 16:9 */
+    padding-bottom: 56.25%;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 8px;
@@ -27,10 +51,19 @@
     border-radius: 8px;
     border: 1px solid var(--border);
 }
-.msg-prof { background: rgba(91, 140, 255, 0.1); padding: 1rem; border-left: 4px solid var(--accent-dim); margin-top: 1rem; border-radius: 4px; color: var(--text); }
+
+.msg-prof {
+    background: rgba(91, 140, 255, 0.1);
+    padding: 1rem;
+    border-left: 4px solid var(--accent-dim);
+    margin-top: 1rem;
+    border-radius: 4px;
+    color: var(--text);
+}
+
 .divatt4 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: var(--surface);
     border: 4px dashed var(--accent);
     border-radius: 15px;
@@ -38,18 +71,47 @@
     animation: animacaoQuadrado 4s ease-in-out infinite;
 }
 
-
 @keyframes animacaoQuadrado {
     0% {
         transform: rotate(0deg) scale(1);
         border-color: var(--accent);
     }
     50% {
-        transform: rotate(180deg) scale(1.1); 
+        transform: rotate(180deg) scale(1.1);
         border-color: var(--accent-dim);
     }
     100% {
         transform: rotate(360deg) scale(1);
         border-color: var(--accent);
+    }
+}
+
+@media (min-width: 601px) {
+    .atv-header {
+        padding: 2rem;
+    }
+
+    .atv-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .atv-container {
+        padding: 2rem;
+    }
+
+    .divatt4 {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .atv-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .divatt4 {
+        width: 250px;
+        height: 250px;
     }
 }

@@ -1,12 +1,12 @@
 .admin-layout {
     max-width: 1000px;
-    margin: 4rem auto;
-    padding: 0 2rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 .admin-header {
     display: flex;
-    flex-direction: column; /* Empilhado no mobile */
+    flex-direction: column;
     align-items: stretch;
     gap: 1rem;
     margin-bottom: 2rem;
@@ -15,7 +15,7 @@
 
 .table-responsive {
     width: 100%;
-    overflow-x: auto; /* Evita que a tabela quebre o layout em telas pequenas */
+    overflow-x: auto;
 }
 
 .user-table {
@@ -27,7 +27,43 @@
     overflow: hidden;
 }
 
-@media (min-width: 600px) {
+.user-table th {
+    background: var(--border);
+    padding: 0.75rem;
+    text-align: left;
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.user-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.btn-edit {
+    color: var(--accent-dim);
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.btn-delete {
+    color: var(--error);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media (min-width: 601px) {
+    .admin-layout {
+        margin: 3rem auto;
+        padding: 0 2rem;
+    }
+
     .admin-header {
         flex-direction: row;
         justify-content: space-between;
@@ -36,24 +72,18 @@
         margin-bottom: 3rem;
     }
 
-    .admin-header #menu ul {
-        flex-direction: row;
+    .user-table th,
+    .user-table td {
+        padding: 1rem;
     }
 }
 
-.user-table th {
-    background: var(--border);
-    padding: 1rem;
-    text-align: left;
-    color: var(--muted);
-    font-size: 0.8rem;
-    text-transform: uppercase;
-}
+@media (min-width: 1025px) {
+    .admin-layout {
+        margin: 4rem auto;
+    }
 
-.user-table td {
-    padding: 1rem;
-    border-bottom: 1px solid var(--border);
+    .user-table th {
+        font-size: 0.9rem;
+    }
 }
-
-.btn-edit { color: var(--accent-dim); background: none; border: none; cursor: pointer; margin-right: 15px; font-weight: 600; }
-.btn-delete { color: var(--error); background: none; border: none; cursor: pointer; font-weight: 600; }
